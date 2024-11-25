@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/vendor.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-</head>
+</head> 
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
@@ -316,31 +316,34 @@
 
 	<section id="download-app" class="leaf-pattern-overlay">
 		<div class="corner-pattern-overlay"></div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-8">
-					<div class="row">
+		<h3>Contact us</h3>
 
-						<div class="col-md-5">
-							<figure>
-								<img src="images/main coverpic.jpeg" >
-							</figure>
-						</div>
+		<div class="container-contact--form">
+		<form action="/action_page.php">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-						<div class="col-md-7">
-							<div class="app-info">
-								<h2 class="section-title divider">Download our pdf and ebook now !</h2>
-								<p>Please email us to get Dingo The Brave Elephant ebook and pdf sent to you. </p>
-								<div class="google-app">
-									<img src="images/google-play.jpg" alt="google play">
-									<img src="images/app-store.jpg" alt="app store">
-								</div>
-							</div>
-						</div>
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-					</div>
-				</div>
-			</div>
+			<label for="country">Province</label>
+			<select id="country" name="country">
+			<option value="Gauteng">Gauteng</option>
+			<option value="Mpumalanga">Mpumalanga</option>
+			<option value="kZN">KwaZulu-Natal</option>
+			<option value="Cape town">Cape town</option>
+			<option value="Eastern cape">Eastern cape</option>
+			<option value="Northern cape">Northern cape</option>
+			<option value="Free state">Free State</option>
+			<option value="Limpopo">Limpopo</option>
+			<option value="North west">North West</option>
+			</select>
+
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
 		</div>
 	</section>
 
